@@ -58,6 +58,10 @@ app.use('/auth', authController);
 app.use('/users', userController);
 app.use('/password', accountController);
 
+app.get('/', (_, res) => {
+  res.json('Carasique')
+})
+
 mongoose.connection.once('open', () => {
   console.log('Connected to MongoDB');
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
