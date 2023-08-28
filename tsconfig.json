@@ -10,6 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "moduleResolution": "NodeNext",
+    "outDir": "server/build"
   },
   "ts-node": {
     "esm": true
