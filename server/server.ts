@@ -52,15 +52,15 @@ app.use((err: ValidationError, req: Request, res: Response, next: NextFunction) 
   return res.status(500).json(err);
 });
 
+app.get('/', (_, res) => {
+  res.json('Carasique')
+})
+
 // routes
 app.use(verifyJWT);
 app.use('/auth', authController);
 app.use('/users', userController);
 app.use('/password', accountController);
-
-app.get('/', (_, res) => {
-  res.json('Carasique')
-})
 
 mongoose.connection.once('open', () => {
   console.log('Connected to MongoDB');

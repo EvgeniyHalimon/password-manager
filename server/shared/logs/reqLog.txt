@@ -5620,3 +5620,6 @@
 20230427	14:30:48	7c6365e0-3b42-4629-8e23-60641e90b8fb	OPTIONS	http://localhost:3000	/auth/refresh
 20230427	14:30:48	f2b137ff-5352-44fa-9d97-2c330c4d3366	GET	http://localhost:3000	/auth/refresh
 20230427	14:30:48	73b1f288-0a7f-4dfc-b100-401e7bd73406	GET	http://localhost:3000	/password?search=&page=1&limit=8&sortBy=applicationName&sort=asc
+20230828	17:09:01	837124f7-d2e3-4300-9c71-5a6f88d69c1a	GET	undefined	/
+20230828	17:11:24	54e400c4-4ca1-4f31-8165-7ad75f32627d	GET	undefined	/
+20230828	17:11:25	728370be-8282-4928-b697-897566af4614	GET	undefined	/favicon.ico

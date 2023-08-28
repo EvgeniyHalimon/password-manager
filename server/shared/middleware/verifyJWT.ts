@@ -12,7 +12,7 @@ const ACCESS_KEY: Secret = process.env.ACCESS_TOKEN_SECRET;
 const REFRESH_KEY: Secret = process.env.REFRESH_TOKEN_SECRET;
 
 const verifyJWT = (req: CustomRequest, res: Response, next: NextFunction): void => {
-  if(req.url == '/auth/register' || req.url == '/auth/login'){
+  if(req.url == '/auth/register' || req.url == '/auth/login' || req.url == '/'){
     return next();
   }
   const authHeader = req.headers['authorization'];
