@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "build:server": "npx tsc",
+        "build:server": "tsc -p .",
         "dev": "cd client && npm run start",
         "lint:client": "eslint \"client/**/*.{ts,tsx}\"",
         "lint:server": "eslint \"server/**/*.{ts,tsx}\"",
